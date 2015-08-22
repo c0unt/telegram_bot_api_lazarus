@@ -1,0 +1,96 @@
+object Form1: TForm1
+  Left = 237
+  Height = 380
+  Top = 186
+  Width = 481
+  Caption = 'Form1'
+  ClientHeight = 380
+  ClientWidth = 481
+  OnCreate = FormCreate
+  LCLVersion = '1.2.6.0'
+  object m_log: TMemo
+    Left = 0
+    Height = 216
+    Top = 0
+    Width = 481
+    Align = alClient
+    TabOrder = 0
+  end
+  object GroupBox1: TGroupBox
+    Left = 0
+    Height = 137
+    Top = 243
+    Width = 481
+    Align = alBottom
+    Caption = 'Commands'
+    ClientHeight = 115
+    ClientWidth = 473
+    TabOrder = 1
+    object b_set_token: TButton
+      Left = 0
+      Height = 25
+      Top = 0
+      Width = 473
+      Align = alTop
+      Caption = 'b_set_token'
+      OnClick = b_set_tokenClick
+      TabOrder = 0
+    end
+    object GroupBox2: TGroupBox
+      Left = 0
+      Height = 90
+      Top = 25
+      Width = 473
+      Align = alClient
+      Caption = 'GroupBox2'
+      ClientHeight = 68
+      ClientWidth = 465
+      TabOrder = 1
+      Visible = False
+      object b_getmessages: TButton
+        Left = 0
+        Height = 25
+        Top = 0
+        Width = 128
+        Caption = 'b_getmessages'
+        OnClick = b_getmessagesClick
+        TabOrder = 0
+      end
+      object cb_mark_as_read: TCheckBox
+        Left = 136
+        Height = 18
+        Top = 7
+        Width = 129
+        Caption = 'cb_mark_as_read'
+        TabOrder = 1
+      end
+      object b_sendmessage: TButton
+        Left = 0
+        Height = 25
+        Top = 32
+        Width = 128
+        Caption = 'b_sendmessage'
+        OnClick = b_sendmessageClick
+        TabOrder = 2
+      end
+    end
+  end
+  object Splitter1: TSplitter
+    Cursor = crVSplit
+    Left = 0
+    Height = 5
+    Top = 238
+    Width = 481
+    Align = alBottom
+    ResizeAnchor = akBottom
+  end
+  object E_URL: TEdit
+    Left = 0
+    Height = 22
+    Top = 216
+    Width = 481
+    Align = alBottom
+    TabOrder = 3
+    Text = 'E_URL'
+  end
+end
